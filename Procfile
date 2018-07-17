@@ -1,1 +1,1 @@
-worker: python nabbot.py
+worker: python nabbot.py &
