@@ -250,6 +250,7 @@ def get_time_diff(time_diff: dt.timedelta) -> Optional[str]:
 
 def get_token():
     """When the bot is run without a login.py file, it prompts the user for login info"""
+    return os.environ['token']
     if not os.path.isfile("token.txt"):
         print("This seems to be the first time NabBot is ran (or token.txt is missing)")
         print("To run your own instance of NabBot you need to create a new bot account to get a bot token")
